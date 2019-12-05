@@ -23,7 +23,7 @@ const Cart = props => (
     {toggleCart => (
       <Query query={LOCAL_STATE_QUERY}>
         {({ data }) =>
-          console.log(data) || (
+         (
             <CartStyles open={data.cartOpen}>
               <header>
                 <CloseButton onClick={toggleCart} title="close">&times;</CloseButton>
